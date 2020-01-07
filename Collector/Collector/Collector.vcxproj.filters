@@ -21,12 +21,18 @@
     <ClInclude Include="__vm\.Collector.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ROMPlugin.h">
+    <ClInclude Include="ISetHendler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IGsmHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ROMPlugin.cpp">
+    <ClCompile Include="ISetHendler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IGsmHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,0 +1,35 @@
+<html lang=''>
+<head>
+    <script>
+
+    </script>
+    <title>Esp8266GSM Settings</title>
+</head>
+<body>
+<form id='Main' action='#'>
+    <fieldset>
+        <legend><h1>Esp8266GSM Settings</h1></legend>
+        <fieldset>
+            <legend><b>GSM connection settings</b></legend>
+            <label>RxPin:<input name='rxPin' type='number' style='width: 7em; margin-left: 5px;'></label>&nbsp
+            <label>TxPin:<input name='txPin' type='number' style='width: 7em; margin-left: 5px;'></label>
+        </fieldset>
+        <fieldset>
+            <legend><b>Network Settings</b></legend>
+            <label>SSID:<input name='ssid' type='text' size='10' style='margin-left: 5px; margin-right: 5px;'></label>
+            <label>Pass:<input name='pass' type='password' size='10' minlength='8' style='margin-left: 5px; margin-bottom: 15px;'></label><br>
+            <label>IP:<input name='ip' type='text' size='10'style='margin-left: 5px; margin-right: 5px;'></label>
+            <label>PORT:<input name='port' type='number' style='width: 7em; margin-left: 5px;' max='4'></label>
+        </fieldset>
+        <fieldset>
+            <legend><b>GSM Settings</b></legend>
+        </fieldset>
+        <br>
+        <div style='text-align: center;'>
+            <input type='button' id='save_button' style='width: 7em;' value='Save'>
+            <input type='reset' id='reset' style='width: 7em;' value='Reset'>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

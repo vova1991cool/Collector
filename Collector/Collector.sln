@@ -13,11 +13,19 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoftwareSerial-1.0", "..\..
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ESP8266WebServer-1.0", "..\..\..\..\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\ESP8266WebServer\ESP8266WebServer-1.0.vcxitems", "{CC572DB3-98DC-4F40-B0CF-3D4A5B39F4B4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ESP8266mDNS-0.0.0", "..\..\..\..\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\ESP8266mDNS\ESP8266mDNS-0.0.0.vcxitems", "{9D593047-14D5-47CC-B29F-A488B638BF39}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ESP8266HTTPClient-1.1", "..\..\..\..\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\ESP8266HTTPClient\ESP8266HTTPClient-1.1.vcxitems", "{6122FD8B-BF77-4385-8FDA-007FFF644C62}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\..\..\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\ESP8266HTTPClient\ESP8266HTTPClient-1.1.vcxitems*{6122fd8b-bf77-4385-8fda-007fff644c62}*SharedItemsImports = 9
 		..\..\..\..\OneDrive\Документы\Arduino\libraries\ArduinoJson\ArduinoJson-6.13.0.vcxitems*{864625dd-48d5-4345-b193-85d37227fbd9}*SharedItemsImports = 9
 		..\..\..\..\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\SoftwareSerial\SoftwareSerial-1.0.vcxitems*{8c16c5a5-ce46-4508-9ee6-89b9363580fe}*SharedItemsImports = 9
+		..\..\..\..\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\ESP8266mDNS\ESP8266mDNS-0.0.0.vcxitems*{9d593047-14d5-47cc-b29f-a488b638bf39}*SharedItemsImports = 9
 		..\..\..\..\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\EEPROM\EEPROM-1.0.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		..\..\..\..\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\ESP8266HTTPClient\ESP8266HTTPClient-1.1.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		..\..\..\..\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\ESP8266mDNS\ESP8266mDNS-0.0.0.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 		..\..\..\..\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\ESP8266WebServer\ESP8266WebServer-1.0.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 		..\..\..\..\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\libraries\SoftwareSerial\SoftwareSerial-1.0.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 		..\..\..\..\OneDrive\Документы\Arduino\libraries\ArduinoJson\ArduinoJson-6.13.0.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4

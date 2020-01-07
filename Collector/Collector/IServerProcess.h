@@ -14,10 +14,10 @@
 class IServerProcessClass
 {
  private:
-
-
+	 ESP8266WebServer _server = ESP8266WebServer(80);
  public:
-	void init(DataConteiner*);
+	void init();
+	void sendPage() { _server.send(200, "text/html", DataManager._getPreparedPage()); }
 };
 
 extern IServerProcessClass IServerProcess;

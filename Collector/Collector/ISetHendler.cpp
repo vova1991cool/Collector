@@ -4,7 +4,7 @@
 
 #include "ISetHendler.h"
 
-DataConteiner::DataConteiner()
+void DataConteiner::init()
 {
 	EEPROM.begin(DATA_SIZE);
 	Serial.print("Reading 0 bit: ");
@@ -15,6 +15,11 @@ DataConteiner::DataConteiner()
 	deserializeJson(jDoc, EEPROM);
 }
 
+const char * DataConteiner::_getPreparedPage()
+{
+	return HTML_PAGE;
+}
+
 void DataConteiner::setDefaults()
 {
 	EEPROM.put(0, DEF_SET);
@@ -23,3 +28,5 @@ void DataConteiner::setDefaults()
 	EEPROM.end();
 	resetFunc();
 }
+
+DataConteiner DataManager;

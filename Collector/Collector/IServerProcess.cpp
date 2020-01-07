@@ -22,13 +22,19 @@ void IServerProcessClass::init()
 	}
 	char _host[21];
 	Serial.println(MDNS.begin(DataManager.get(_host, true)) ? "mDNS responder started" : "Error setting up MDNS responder!");
+
+	this->begin(80);
 	
-	_server.on("/", HTTP_GET, []() {
-		IServerProcess.sendPage();
+	this->on("/", HTTP_GET, []() {
+		IServerProcess.send(200, "text/html", DataManager._getPreparedPage());
 	});
 
-	_server.on("/save", HTTP_POST, []() {
+	this->on("/save", HTTP_POST, []() {
+		IServerProcess.args();
+	});
 
+	this->onNotFound([]() {
+		IServerProcess.send(404, "text/plain", "404: Not Found");
 	});
 
 }

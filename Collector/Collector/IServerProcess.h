@@ -11,13 +11,11 @@
 
 #include "ISetHendler.h"
 
-class IServerProcessClass
+class IServerProcessClass:public ESP8266WebServer
 {
- private:
-	 ESP8266WebServer _server = ESP8266WebServer(80);
  public:
 	void init();
-	void sendPage() { _server.send(200, "text/html", DataManager._getPreparedPage()); }
+	void clientsHendler() { this->handleClient(); }
 };
 
 extern IServerProcessClass IServerProcess;

@@ -117,11 +117,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IGsmHandler.h" />
+    <ClInclude Include="IServerProcess.h" />
     <ClInclude Include="ISetHendler.h" />
     <ClInclude Include="__vm\.Collector.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IGsmHandler.cpp" />
+    <ClCompile Include="IServerProcess.cpp" />
     <ClCompile Include="ISetHendler.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -27,12 +27,18 @@
     <ClInclude Include="IGsmHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IServerProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ISetHendler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="IGsmHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IServerProcess.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
